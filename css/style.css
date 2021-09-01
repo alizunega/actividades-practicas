@@ -1,15 +1,17 @@
 body{
     font-family: Verdana, Helvetica, sans-serif; 
+    margin:0;
+    padding: 0;
+    background-color: rgba(211, 175, 255, 0.66);
 }
 /*Barra de  navegacion de todas las paginas*/
-#nav-var, footer{
+#nav-var{
     background-color: rgba(184, 137, 247, 0.993); 
     text-align: center; 
+    position: fixed;
     font-weight: bold;
-    size: auto; 
-    margin: 0px 15px;
-    padding: 15px 15px;
-    border-radius: 7px;
+    width: 100%; 
+    padding: 15px 10px;
 }
 /*estilo del titulo*/
 h1{
@@ -18,17 +20,23 @@ h1{
     font-size: 4em;
     color: rgba(161, 111, 241, 0.95);
 }
-/*pie de paginas de toda la web
+/*pie de paginas de toda la web*/
 footer{
     font-weight: bold;
     background-color:rgba(184, 137, 247, 0.993);
     text-align:center;
-    margin-bottom: 5px;
-    padding-bottom: 7px;
-}*/
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    height: 30;
+    position: fixed;
+    margin-top: 0px;
+    padding: 5px;
+}
 
 .fa-instagram-square{
     color:rgb(155, 48, 197);
+    font-size: 1.5vw;
 }
 
 /*.fa-instagram{
@@ -37,12 +45,19 @@ footer{
 
 .fa-facebook{
     color: rgb(49, 49, 136);
+    font-size: 1.5vw;
 }
 /*imagen y texto pagina principal*/
 #img-portada{
-   
-   margin: 2% 2%;
+   text-align: center;
+   height: 100%;
+   border-top: 10px; 
+   margin: auto;
    padding: 1px 0px;
+}
+div{
+    margin: 0px;
+    text-align: center;
 }
 /*imagen nosotros*/
 #img-nosotros{
@@ -52,7 +67,12 @@ footer{
     opacity: 0.9;
     align-self: baseline;
 }
-/*field set de contacto*/
+.nosotros-texto{
+    text-align: center;
+    width: 75%;
+    margin: auto;
+}
+
 
 /*estilos de las tablas de galeria*/
 td{
@@ -68,7 +88,21 @@ td > img{
     width: 100%;
     
 }
+/*estilos del formulario*/
+form{
+    margin-left: 15em;
+}
 
-
-
+/*field set de contacto*/
+fieldset{
+    width: 70%; 
+    background-color: rgb(233, 211, 253);
+}
+legend{
+    font-weight: bold;
+}
+.buttons{
+    width: 70%;
+    text-align: center;
+}
 

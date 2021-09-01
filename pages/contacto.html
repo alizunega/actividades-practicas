@@ -26,8 +26,8 @@
 
     </header>
     <form action="/pages/show_data.html" target="_blank">
-        <fieldset style="width: 70%; background-color: #E9EFFC; ">
-            <legend><b>Datos de contacto: </b></legend>
+        <fieldset>
+            <legend>Datos de contacto:</b></legend>
             <label for="nombre">Nombre: </label>
             <input type="text" name="nombre" size="30" maxlength="10" placeholder="Juan"> <br>
             <label for="apellido">Apellido: </label>
@@ -52,13 +52,13 @@
 
 
         </fieldset>
-        <fieldset style="width: 70%; background-color: #E9EFFC;">
+        <fieldset>
 
-            <legend><b>Armemos tu pedido: </b></legend> <br>
-            <label for="fiesta"> <b> Tenés una fiesta?</b></label><br>
-            <input type="radio" id="fiesta" name="opcion" value="cumple"> Cumple
+            <legend>Armemos tu pedido:</legend> <br>
+            <label for="fiesta"> Que tipo de fiesta tenés?</label>
+            <input type="radio" id="fiesta" name="opcion" value="cumple"> Cumpleaños
             <input type="radio" id="fiesta" name="opcion" value="reunion"> Reunión
-            <input type="radio" name="opcion" id="fiesta" value="juntada"> Juntada de Amigos
+            <input type="radio" name="opcion" id="fiesta" value="juntada"> Juntada con Amigos
             <br><br>
             <label><b>Te damos algunas opciones:</b></label><br>
             <input type="checkbox" name="opcion" value="opcion1"> Tortas <br>
@@ -71,7 +71,8 @@
 
         </fieldset>
         <br>
-        <div align="center"><input type="submit" value="Enviar"> |
+        <div class="buttons">
+            <input type="submit" value="Enviar"> |
             <input type="reset" value="Borrar">
         </div>
 

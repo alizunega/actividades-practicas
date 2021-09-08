@@ -2,28 +2,38 @@ body{
     font-family: Verdana, Helvetica, sans-serif; 
     margin:0;
     padding: 0;
-    background-color: rgba(211, 175, 255, 0.66);
+    background-color: rgb(243, 206, 165);
+    
+}
+nav > a{
+    color:rgb(233, 211, 253);
 }
 /*Barra de  navegacion de todas las paginas*/
 #nav-var{
-    background-color: rgba(184, 137, 247, 0.993); 
+    background-color: rgba(10, 10, 10, 0.993); 
     text-align: center; 
     position: fixed;
     font-weight: bold;
     width: 100%; 
     padding: 15px 10px;
 }
+/*estilo seccion usuarios en nav*/
+#usuarios{
+    
+    font-size: 0.65em;
+}
 /*estilo del titulo*/
 h1{
     font-family: 'Dancing Script', cursive;
     text-align: center;
     font-size: 4em;
-    color: rgba(161, 111, 241, 0.95);
+    color: rgba(138, 79, 56, 0.95);
 }
 /*pie de paginas de toda la web*/
 footer{
     font-weight: bold;
-    background-color:rgba(184, 137, 247, 0.993);
+    background-color:rgba(3, 3, 3, 0.993);
+    color: white;
     text-align:center;
     width: 100%;
     left: 0;
@@ -104,41 +114,63 @@ iframe{
     height: 400px;
     border:0;
 }
+/*icono mail*/
 .fa-at{
     color: rgb(101, 24, 243);
     font-size: 1.5vw;
 }
+/*icono whatsapp*/
 .fa-whatsapp-square{
     
-    color: green;
+    color: rgb(59, 146, 59);
+    font-size: 1.5vw;
+}
+/*contacto telef y mail*/
+.fa-map-marked-alt{
+    color:rgb(24, 23, 23);
     font-size: 1.5vw;
 }
 
 /*estilos del formulario*/
 form{
-    margin-left: 15em;
+    width: 60%;
+    margin: 1% 20%;
+    height: auto;
+    text-align: left;
+    font-size: 0.95vw;
+       
 }
+
+#consulta{
+    width: 60%;
+    height: 5em;
+}
+
 
 /*fieldset de contacto*/
 fieldset{
-    width: 70%; 
-    background-color: rgb(233, 211, 253);
+    width: 100%; 
+    background-color: rgb(248, 238, 213);
+    box-sizing: border-box;
+    
 }
 legend{
     font-weight: bold;
 }
 .buttons{
-    width: 70%;
-    text-align: center;
-    
+    padding: 0.5em;
+    border: 0.5em double rgb(49, 49, 136);
+    position: relative;
+    width: inherit;
+    height: inherit;
 }
 label{
-    width: 28%;
+    width: 10%;
     display: inline-block;
-    
-
 }
 input{
     margin: 0.3em 0.2em ;
+    height: 1.3vw;
+    
     
 }

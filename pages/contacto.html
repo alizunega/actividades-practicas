@@ -33,7 +33,7 @@
             <label for="apellido">Apellido: </label>
             <input type="text" name="apellido" size="30" maxlength="10" placeholder="Pérez" required> <br>
             <label for="telefono">Teléfono: </label>
-            <input type="tel" name="telefono" placeholder="(0261)1234567" required>
+            <input type="tel" name="telefono" placeholder="(0261)1234567" required><br>
             <label for="empresa">Compañía: </label>
             <select name="empresa" id="empresa">
                 <option value="claro">Claro</option>
@@ -46,13 +46,14 @@
             <input type="email" name="email" placeholder="ejemplo@mail.com"> <br>
 
             <label for="consulta">Dejanos tu consulta: </label>
-            <textarea name="consulta" id="consulta" cols="40" rows="10" placeholder="Escribe tu consulta..."></textarea>
+            <textarea name="consulta" id="consulta" placeholder="Escribe tu consulta..."></textarea>
             <br>
 
 
 
         </fieldset>
-        <fieldset>
+        <!--
+            <fieldset>
 
             <legend>Armemos tu pedido:</legend> <br>
             <label for="fiesta"> Que tipo de fiesta tenés?</label>
@@ -60,21 +61,25 @@
             <input type="radio" id="fiesta" name="opcion" value="reunion"> Reunión
             <input type="radio" name="opcion" id="fiesta" value="juntada"> Juntada con Amigos
             <br><br>
+            
             <label><b>Te damos algunas opciones:</b></label><br>
-            <input type="checkbox" name="opcion" value="opcion1"> Tortas <br>
-            <input type="checkbox" name="opcion" value="opcion2"> Mesas Dulces <br>
-            <input type="checkbox" name="opcion" value="opcion3"> Desayunos <br>
-            <input type="checkbox" name="opcion" value="opcion4"> Prepizzas <br>
-            <input type="checkbox" name="opcion" value="opcion5"> Pernil <br>
+            <input class="opciones" type="checkbox" name="opcion" value="opcion1"> Tortas <br>
+            <input class="opciones" type="checkbox" name="opcion" value="opcion2"> Mesas Dulces <br>
+            <input class="opciones" type="checkbox" name="opcion" value="opcion3"> Desayunos <br>
+            <input class="opciones" type="checkbox" name="opcion" value="opcion4"> Prepizzas <br>
+            <input class="opciones" type="checkbox" name="opcion" value="opcion5"> Pernil <br>
 
+            <label for="date-event">Contanos que día será el evento:</label>
+            <input type="date" name="date-event" ><br>
 
 
         </fieldset>
+        -->
         <br>
-        <div class="buttons">
-            <input type="submit" value="Enviar"> |
-            <input type="reset" value="Borrar">
-        </div>
+
+        <input class="buttons" type="submit" value="Enviar"> <br>
+        <input class="buttons" type="reset" value="Borrar">
+        
 
 
 

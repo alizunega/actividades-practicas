@@ -9,19 +9,26 @@ nav > a{
     color:rgb(233, 211, 253);
 }
 /*Barra de  navegacion de todas las paginas*/
+#usuarios{
+    float: right;
+    font-size: 0.8em;
+    padding: 0.5em;
+    margin: 0.2em 0.5em;
+    
+}
+
 #nav-var{
-    background-color: rgba(10, 10, 10, 0.993); 
+    background-color: #914E40; 
     text-align: center; 
     position: fixed;
+    top: 0;
     font-weight: bold;
     width: 100%; 
-    padding: 15px 10px;
+    height: 4em;
+    
 }
 /*estilo seccion usuarios en nav*/
-#usuarios{
-    
-    font-size: 0.65em;
-}
+
 /*estilo del titulo*/
 h1{
     font-family: 'Dancing Script', cursive;
@@ -32,21 +39,21 @@ h1{
 /*pie de paginas de toda la web*/
 footer{
     font-weight: bold;
-    background-color:rgba(3, 3, 3, 0.993);
+    background-color:#914E40;
     color: white;
     text-align:center;
     width: 100%;
     left: 0;
     bottom: 0;
-    height: 30;
+    height: 5em;
     position: fixed;
-    margin-top: 0px;
-    padding: 5px;
+    
+    
 }
 
 .fa-instagram-square{
     color:rgb(155, 48, 197);
-    font-size: 1.5vw;
+    font-size: 0.8em;
 }
 
 /*.fa-instagram{
@@ -55,7 +62,7 @@ footer{
 
 .fa-facebook{
     color: rgb(49, 49, 136);
-    font-size: 1.5vw;
+    font-size: 0.8em;
 }
 /*imagen y texto pagina principal*/
 #img-portada{
@@ -159,9 +166,9 @@ legend{
 }
 .buttons{
     padding: 0.5em;
-    border: 0.5em double rgb(49, 49, 136);
-    position: relative;
-    width: inherit;
+    border: 0.5em double rgb(0, 0, 0);
+    position: inherit;
+    width: 5em;
     height: inherit;
 }
 label{
@@ -173,4 +180,8 @@ input{
     height: 1.3vw;
     
     
+}
+/*formulario ingreso*/
+.form-ingreso{
+    color: ivory;
 }

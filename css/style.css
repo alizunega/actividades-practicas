@@ -146,68 +146,6 @@ h3{
     color: black;
     
 }
-
-/***********************************/
-/*grid pagina productos y servicios*/
-/***********************************/
-div.container-productos {
-    display: grid;
-    grid-template-areas: "nav nav"
-                        "header header"
-                        "grid-item1 grid-item1"
-                        "grid-item2 grid-item2"
-                        "grid-item3 grid-item3"
-                        "grid-item4 grid-item4"
-                        "grid-item5 grid-item5"
-                        "footer footer";
-    
-    grid-template-rows: repeat(8, auto);
-    background-color: rgb(235, 233, 231);
-    grid-gap: 1em;
-    
-    
-}
-nav.navbar{
-    grid-area: nav;
-}
-header.header{
-    grid-area: header;
-}
-main.grid-item1{
-    grid-area: grid-item1;
-   
-}
-main.grid-item2{
-    grid-area: grid-item2;
-    
-}
-main.grid-item3{
-    grid-area: grid-item3;
-}
-main.grid-item4{
-    grid-area: grid-item4;
-    
-}
-main.grid-item5{
-    grid-area: grid-item5;
-    display: inline;
-        
-}
-
-.image-grid img{
-    height: 40%;
-    width: 60%;
-    padding-bottom: 0.5em;
-}
-
-main li{
-    display: flex;
-    
-}
-main > p{
-    text-justify: inter-word;
-}
-
 /**********************/ 
 /* grid pagina inicio */
 /**********************/
@@ -251,8 +189,6 @@ main.item2{
     margin-left: 10%;
     text-decoration-style: solid;
     color: #000;
-    font-style: oblique;
-    
     text-decoration-thickness: 15vh;
 }
 
@@ -262,6 +198,81 @@ img.imagen-grid{
     width:  15%;
     opacity: 25%;
 }
+
+/***********************************/
+/*grid pagina productos y servicios*/
+/***********************************/
+div.container-productos {
+    display: grid;
+    grid-template-areas: "nav nav"
+                        "header header"
+                        "grid-item1 grid-item1"
+                        "grid-item2 grid-item2"
+                        "grid-item3 grid-item3"
+                        "grid-item4 grid-item4"
+                        "grid-item5 grid-item5"
+                        "footer footer";
+                        
+    
+    grid-template-rows: repeat(8, auto);
+    background-color: rgb(235, 233, 231);
+    grid-gap: 1em;
+    
+    
+}
+nav.navbar{
+    grid-area: nav;
+}
+header.header{
+    grid-area: header;
+}
+main.grid-item1{
+    grid-area: grid-item1;
+   
+}
+main.grid-item2{
+    grid-area: grid-item2;
+    
+}
+main.grid-item3{
+    grid-area: grid-item3;
+}
+main.grid-item4{
+    grid-area: grid-item4;
+    
+}
+main.grid-item5{
+    grid-area: grid-item5;
+    display: inline;
+        
+}
+main{
+    margin: auto 10em;
+    justify-content: center;
+}
+
+.image-grid img{
+    height: 40%;
+    width: 60%;
+    padding-bottom: 0.5em;
+    
+}
+
+main li{
+    display: flex;
+    
+}
+main > p{
+    justify-content: left;
+    margin-right: 2em;
+    font-style: oblique;
+}
+main>p::first-letter{
+    margin-left: 1em;
+    font-weight: bolder;
+}
+
+
 /**********************/
 /*grid pagina contacto*/
 /**********************/
@@ -347,17 +358,38 @@ footer > a:hover{
 /*estilos pagina establecimientos*/
 /*contenedor mapa y medios de comunicacion*/
 
-.mapita{
-    text-align: left;
-    margin: 0.1em 0.5em; 
-    padding: 0.5em 0.5em;
-    width: auto;
-    height: auto;
-    display: block;
+div.container-map{
+    display: grid;
+    grid-template-areas: "nav nav"
+                        "header header"
+                        "item1 item1"
+                        "item2 item2"
+                        "footer footer";
+    grid-auto-flow: rows;   
+    grid-template-rows: repeat(5, auto);
+    grid-gap: 1em;
+
+
 }
+nav.navbar{
+    grid-area: nav;
+}
+header.header{
+    grid-area: header;
+}
+main.item1{
+    grid-area: item1;
+    margin-left: 10em;
+
+}
+main.item2{
+    grid-area: item2;
+    align-self: center;
+}
+
 iframe{
-    width:80%;
-    height: 60%;
+    width:100%;
+    height: auto;
     border:0 2em;
 }
 /*icono mail*/
@@ -381,21 +413,3 @@ iframe{
     height: auto;
     width: auto;
 }
-
-
-
-/*formulario ingreso*/
-/*
-.form-ingreso{
-    color: ivory;
-    display: block;
-    width: 60%;
-    align-content: center;
-}
-.form-ingreso > fieldset{
-    width: 40%;
-}
-.form-ingreso > label, input{
-    display: block;
-}
-*/

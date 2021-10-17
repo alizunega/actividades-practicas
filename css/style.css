@@ -94,16 +94,6 @@ body {
 /*     Estilo por defecto           */
 /************************************/
 
-
-/*header de todas las paginas
-.header {
-    padding: 0.25em 0em;
-    text-align: center;
-    background:whitesmoke;
-    color: black;
-
-}*/
-
 /*Estilos de titulos*/
 h1{
     font-family: 'Dancing Script', cursive;
@@ -119,6 +109,7 @@ h3{
     color: rgba(236, 157, 54, 0.95);
 }
 
+/*barras de navegacion*/
 .navbar {
     display: flex;
     background-color: #333;
@@ -149,11 +140,10 @@ h3{
 }
 
 
-
+/*estilo mouseover*/
 .navbar>a:hover, .nav-link:hover {
     background-color: rgba(241, 224, 224, 0.178);
     color: black;
-
     
 }
 
@@ -203,16 +193,6 @@ main.grid-item5{
     display: inline;
         
 }
-/*
-.footer{
-    grid-area: footer;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    align-self: flex-end;
-    
-    
-}*/
 
 .image-grid img{
     height: 40%;
@@ -244,7 +224,7 @@ main > p{
                         "footer footer";     
 
     grid-auto-flow: row;    
-    grid-template-columns: auto;
+    grid-template-columns: auto auto;
     grid-template-rows: auto auto auto auto auto;
                    
 
@@ -256,18 +236,23 @@ main > p{
 }
 .header{
     grid-area: header;
-    
+    justify-self: center;
+    align-self: center;
 }
+
 main.item1{
     grid-area: item1;
-    
+    margin-left: 10%;
 }
 main.item2{
     grid-area: item2;
     text-align: justify;
     align-self: center;
     margin-left: 10%;
-    text-decoration-color: indigo;
+    text-decoration-style: solid;
+    color: #000;
+    font-style: oblique;
+    
     text-decoration-thickness: 15vh;
 }
 
@@ -283,6 +268,9 @@ img.imagen-grid{
 .container-contacto{
 
 }
+
+/*gid pagina de establecimientos*/
+
 
 
 .footer{
@@ -354,32 +342,6 @@ footer > a:hover{
     background-color: grey;
 
 }
-/*imagen y texto pagina principal*/
-#img-portada{
-   text-align: center;
-   height: 100%;
-   border-top: 10px; 
-   margin: auto;
-   padding: 1px 0px;
-}
-div{
-    margin: 0px;
-    text-align: center;
-}
-/*imagen nosotros*/
-#img-nosotros{
-    height: 55%;
-    width: 35%;
-    margin: 15px 40px;
-    opacity: 0.9;
-    align-self: baseline;
-}
-.nosotros-texto{
-    text-align: center;
-    width: 75%;
-    margin: auto;
-}
-
 
 
 /*estilos pagina establecimientos*/
